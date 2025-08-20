@@ -1,1 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Startup Portfolio</title>
+  
+  <!-- FontAwesome Library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <style>
+    body { margin:0; font-family:Arial, sans-serif; background:#0b1020; color:#eef2ff; }
+    header { background:#121a35; padding:1rem; position:sticky; top:0; z-index: 10; }
+    nav { display:flex; justify-content:space-between; align-items:center; }
+    nav ul { list-style:none; display:flex; gap:1rem; margin:0; padding:0; }
+    nav a { color:#6ea8fe; text-decoration:none; }
+    section { padding:3rem 2rem; }
+    h1,h2,h3 { margin-bottom:1rem; }
+    .hero { text-align:center; background:#101939; padding:4rem 2rem; }
+    .btn { display:inline-block; margin-top:1rem; padding:0.7rem 1.2rem; background:#6ea8fe; color:#041022; border-radius:8px; font-weight:bold; text-decoration:none; }
+    .project { background:#121a35; padding:1rem; margin:1rem 0; border-radius:12px; }
+    footer { text-align:center; padding:2rem; background:#121a35; }
+    .logo img { border-radius:8px; }
+
+    /* Contact Icons */
+    .contact-icons {
+      display:flex;
+      justify-content:center;
+      gap:1rem;
+      margin:1.5rem 0;
+    }
+    .contact-icons a {
+      font-size:1.5rem;
+      width:45px; height:45px;
+      display:flex; justify-content:center; align-items:center;
+      border-radius:50%;
+      color:#fff;
+      transition:0.3s;
+    }
+    .contact-icons a:hover { transform:scale(1.1); }
+
+    .fa-envelope { background:#e63946; }
+    .fa-linkedin { background:#0077b5; }
+    .fa-facebook { background:#1877f2; }
+    .fa-instagram { background:#e1306c; }
+    .fa-whatsapp { background:#25d366; }
+
+    /* Contact Form */
+    form { max-width:500px; margin:0 auto; display:flex; flex-direction:column; gap:1rem; }
+    input, textarea { padding:0.7rem; border:none; border-radius:8px; }
+    button { background:#6ea8fe; border:none; padding:0.8rem; border-radius:8px; font-weight:bold; cursor:pointer; }
+    button:hover { background:#558dd6; }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="DeepNex.jpeg" alt="Startup Logo" width="40" height="40">
+      </div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <h1>We build AI & Data solutions for smarter decisions</h1>
+    <p>A data science startup that provides advanced data analysis solutions using AI and Excel to help businesses make smarter, data-driven decisions.</p>
+    <a href="#projects" class="btn">See Projects</a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p><strong>Vision:</strong> To become a comprehensive data science company, offering integrated solutions that combine AI, advanced analytics, and tools like Excel to meet diverse business needs.</p>
+    <p><strong>Mission:</strong> Our mission is to empower businesses to unlock the full potential of their data by delivering simple yet powerful end-to-end data science and analytics solutions.</p>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <h2>Services</h2>
+    <ul>
+      <li><strong>Data Analysis & Visualization:</strong> Advanced data analysis and interactive visualization using Data Science techniques and Excel solutions to turn raw data into insights.</li>
+      <li><strong>Machine Learning Models:</strong> Designing and developing ML models to predict trends, optimize processes, and support smarter decision-making.</li>
+      <li><strong>AI & Excel Solutions for Businesses:</strong> Customized AI-powered and Excel-based solutions that integrate with business workflows to enhance efficiency and drive growth.</li>
+    </ul>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Portfolio</h2>
+    <div class="project">
+      <h3>Unemployment Prediction in India</h3>
+      <p>We built a scalable model that can be applied to any country. Starting with India, we collected and analyzed unemployment data, created an interactive dashboard, and transformed it into an application.</p>
+      <img src="2.png" alt="Project 1" />
+    </div>
+    
+    <div class="project">
+      <h3>Advertisement Prediction to Attract Customers</h3>
+      <p>A predictive model with 99% accuracy in forecasting which ads are most effective in attracting customers, helping businesses optimize marketing strategies.</p>
+      <img src="1.png" alt="Project 2" />
+    </div>
+    
+    <div class="project">
+      <h3>Car Price Prediction Based on Specifications</h3>
+      <p>Using ML models to predict car prices based on features like transmission type, fuel type, and other specifications.</p>
+      <img src="3.png" alt="Project 3" />
+    </div>
+
+    <div class="project">
+      <h3>Sales & Revenue Analysis Dashboard</h3>
+      <p>Interactive Excel-based dashboard analyzing sales and revenue across multiple countries, products, and channels. Includes forecasting future revenue trends.</p>
+      <img src="Dashboard.png" alt="Project 4" />
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section id="team">
+    <h2>Our Team</h2>
+    <ul>
+      <li><strong>Esraa Yasser – Founder & CEO</strong><br>Specialized in Data Science, AI, and Excel solutions.</li>
+      <li><strong>Gannat Alaa – Co-Founder & COO</strong><br>Skilled in data visualization and reporting.</li>
+      <li><strong>Abdelrahman Hossam – Co-Founder & CTO</strong><br>Expert in Machine Learning and Data Analysis.</li>
+      <li><strong>Khaled Mohamed – Business & Marketing Manager</strong><br>Focused on market analysis, strategy, and communication.</li>
+    </ul>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>We’d love to hear from you! Connect with us through the icons below or send us a direct message.</p>
+
+    <div class="contact-icons">
+      <a href="mailto:deepnex20@example.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/company/108234942/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=61578141796543" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/deep_nex/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/201552247074" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+
+    <!-- Contact Form -->
+    <form action="https://formspree.io/f/yourformid" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>DeepNex. All rights reserved.</p>
+  </footer>
+</body>
+</html>
 
